@@ -5,14 +5,14 @@ metadata:
 data:
   trafficFilters:
     rules:
-      - name: block-xss
-        when:
-          reqProperty: tier
-          equals: "publish"
-        action:
-          type: block
-          wafFlags:
-            - XSS
+      # - name: block-xss
+      #   when:
+      #     reqProperty: tier
+      #     equals: "publish"
+      #   action:
+      #     type: block
+      #     wafFlags:
+      #       - XSS
       - name: "path-rule"
         when:
           reqProperty: path
